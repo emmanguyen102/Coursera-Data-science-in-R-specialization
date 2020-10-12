@@ -2,6 +2,6 @@
 A 10-courses Data Science specialization provided by Johns Hopkins University that has the focus on R programming language
 ## Course 1: Data Scientist's Toolbox
 Introducing RStudio and R programming language
-## Course 2: (R Programming)[https://github.com/emmanguyen102/Coursera-Data-science-in-R-specialization/tree/main/Course_2]
+## Course 2: [R Programming](https://github.com/emmanguyen102/Coursera-Data-science-in-R-specialization/tree/main/Course_2)
 Learning how to code R
 ## Course 3: Getting and cleaning Data
