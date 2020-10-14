@@ -5,7 +5,7 @@ best <- function(state, outcome) {
         
         ## check if outcome in the created vector above
         if (outcome %in% outcomes == FALSE) {
-                stop("Invalid outcome")
+                stop("invalid outcome")
         }
         
         ## read CSV file
@@ -26,7 +26,7 @@ best <- function(state, outcome) {
         
         ## check if state in states 
         if (state %in% states == FALSE) {
-                stop("Invalid state")
+                stop("invalid state")
         }
         
         ## subset the data frame again with chosen state and outcome
