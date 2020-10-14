@@ -24,6 +24,7 @@ rankhospital <- function(state, outcome, num) {
                 stop("invalid state")
         }
         
+        ## validate the num value by checking if it is "best", "worst", or a number.
         if (num != "best && num != "worst" && num%%1 != 0) {
                 stop("Invalid num")
         }
@@ -31,11 +32,12 @@ rankhospital <- function(state, outcome, num) {
         data <- data[data$state == state & data[outcome] != "Not available"]
         
         ## order the data by name and then outcome
+        data[outcome] <- as.data.frame(sapply(data[outcome], as.numeric))
         data <- data[order(data$name, decreasing = FALSE), ]
         data <- data[order(data[outcome], decreasing = FALSE), ]
         
         ## process the num argument to get the row index
-        vals z- data[, outcome]
+        vals <- data[, outcome]
         if (num == "best") {
                 rowNum <- which.min(vals)
         } else if (num == "worst") {
